@@ -1,11 +1,12 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <span class="iocnfont">&#xe601;</span>
+      <div class="iconfont back-icon">&#xe601;</div>
     </div>
     <div class="header-input"><span class="iconfont">&#xe619;</span>输入城市\景点\游玩主题</div>
     <div class="header-right">
-      <span class="iconfont">&#xe62b;</span>
+      城市
+      <span class="iconfont arrow-icon">&#xe62b;</span>
     </div>
   </div>
 </template>
@@ -16,19 +17,24 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import '~styles/varibles.styl'
   .header
     display: flex
     line-height: .86rem
-    background: #00bcd4
+    background: $bgColor
     color: #fff
     .header-left
       width: .64rem
       float: left
+      .back-icon
+        text-align: center
+        font-size: .4rem
     .header-input
       flex: 1
       height: .64rem
       line-height: .64rem
       margin-left: .2rem
+      padding-left: .2rem
       margin-top: .12rem
       background: #ffffff
       border-radius: .1rem
@@ -37,4 +43,7 @@ export default {
       width: 1.24rem
       float: right
       text-align: center
+      .arrow-icon
+        margin-left: -.04rem
+        font-size: .24rem
 </style>

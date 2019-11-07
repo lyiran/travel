@@ -13,6 +13,11 @@ module.exports = {
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
+        // 后端接口
+        // target: 'http://test.lyiran.com',
+        // pathRewrite: {
+        //   '^/api': '/data'
+        // }
         pathRewrite: {
           '^/api': '/static/mock'
         }
